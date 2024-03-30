@@ -24,8 +24,8 @@ graph = { #algorithm graph
     3: [1],
     4: [2]
 }
-start_vertex = 1
-end_vertex = 4
+start_vertex = 1 #starting point
+end_vertex = 4 #end point
 
 try: #algorith usage 
     length, path = dfs_with_length_and_path(graph, start_vertex, end_vertex)
