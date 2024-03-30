@@ -24,8 +24,13 @@ graph = { #algorithm graph
     3: [1],
     4: [2]
 }
+<<<<<<< HEAD
 start_vertex = 1 #starting point
 end_vertex = 4 #end point
+=======
+start_vertex = 1 #стартовая вершина
+end_vertex = 4 #конечная вершина
+>>>>>>> 9a38c3b (Added new comments to the code)
 
 try: #algorith usage 
     length, path = dfs_with_length_and_path(graph, start_vertex, end_vertex)
