@@ -1,4 +1,4 @@
-def dfs_with_length_and_path(graph, start, end): #Алгоритм поиска в глубину
+def dfs_with_length_and_path(graph, start, end): #Depth first search
     if start not in graph or end not in graph:
         raise ValueError("Invalid start or end vertex")
 
@@ -18,7 +18,7 @@ def dfs_with_length_and_path(graph, start, end): #Алгоритм поиска 
 
     return -1, []
 
-graph = { #граф для алгоритма
+graph = { #algorithm graph
     1: [2, 3],
     2: [1, 4],
     3: [1],
@@ -27,7 +27,7 @@ graph = { #граф для алгоритма
 start_vertex = 1
 end_vertex = 4
 
-try: #попытка использования алгоритма
+try: #algorith usage 
     length, path = dfs_with_length_and_path(graph, start_vertex, end_vertex)
     print("Length of the shortest path:", length)
     print("Shortest path:", path)
